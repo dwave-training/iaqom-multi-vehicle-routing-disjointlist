@@ -14,7 +14,7 @@ In this repository does not contain any `#TODO` sections that need to be complet
 
 ## Quiz 1
 
-In the first quiz, we created the model object and defined the constant matrices. 
+In the first quiz, we created the model object and defined the constant matrices.
 
 Open the code file `mvrp_distance_matrices.py`.
 
@@ -23,7 +23,7 @@ Open the code file `mvrp_distance_matrices.py`.
    2. Create a nonlinear model object called `model`.
 
    3. Define the constant matrices:
-      - `full_dist_matrix`, where node `0` is the warehouse and nodes `1` to `5` are the customers locations. 
+      - `full_dist_matrix`, where node `0` is the warehouse and nodes `1` to `5` are the customers locations.
       - `c_dist`, submatrix distance.
       - `w_dist`, submatrix distance.
 
@@ -41,7 +41,7 @@ Open the code file `mvrp_constants_decision.py`.
       - `customer_demand`, the demand of each customer location.
       - `num_customers`, the total number of customers.
       - `num_vehicles`, the total number of vehicles.
-      -  `vehicle_capacity`, the weight capacity of each vehicle.
+      - `vehicle_capacity`, the weight capacity of each vehicle.
 
 ## Quiz 3
 
