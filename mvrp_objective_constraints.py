@@ -29,7 +29,7 @@ full_dist_matrix = np.array([
 							[1, 5, 3, 6, 8, 0]
 							])
 
-# Submatrices distance.
+# Distance submatrices.
 c_dist = full_dist_matrix[1:, 1:]         
 w_dist = full_dist_matrix[0, 1:]            
 

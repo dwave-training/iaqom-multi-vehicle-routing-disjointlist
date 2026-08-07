@@ -4,13 +4,13 @@
   
 # Multi-Vehicle Routing Problem with Stride<sup>TM</sup> Hybrid Solver using Disjoint Lists Variable
 
-For the multi-vehicle routing problem, convert the mathematical formulation into a model in Python code. Use disjoint lists as the decision variable to code the problem so that it is compatible for submission to the Stride hybrid solver.
+For the multi-vehicle routing problem, convert the mathematical formulation into a model in Python. Use disjoint lists as the decision variable so the problem is compatible for submission to the Stride hybrid solver.
 
 The objective is to minimize the total distance traveled by all vehicles. The decision variable is which customer location(s) each vehicle should visit, and the order in which each vehicle should visit assigned customer location(s). There are two constraints: each customer (delivery) location must be visited exactly once by a single vehicle, and a vehicle cannot exceed its weight capacity.
 
 Build the nonlinear model then define the objective function and add the constraints.
 
-In this repository does not contain any `#TODO` sections that need to be completed in the Python files. The provided code is intended to help you answer the quizzes questions available in Brightspace (LMS).
+This repository does not contain any `#TODO` sections that need to be completed in the Python files. The provided code is intended to help you answer the quiz questions available in Brightspace (LMS).
 
 ## Quiz 1
 
