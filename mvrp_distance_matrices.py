@@ -1,12 +1,12 @@
 '''
-A retail company needs to route two vehicles to five delivery locations. 
+A retail company needs to route two vehicles to five customer (delivery) locations. 
 Assume that each vehicle starts from a single warehouse location and delivers 
-resources to multiple delivery locations. 
+resources to multiple delivery locations. All vehicles have the same weight capacity for how much cargo they can carry.
 
 Objective: Minimize the total distance traveled by all vehicles.
 
 Constraints:
-Each delivery location must be visited exactly once by a single vehicle.
+Each customer (delivery) location must be visited exactly once by a single vehicle.
 A vehicle cannot exceed its weight capacity.
 '''
 # Import the required packages.
@@ -18,7 +18,7 @@ from dwave.optimization import Model
 model = Model()
 
 # Define the constant matrices.
-# Full distance matrix: node 0 is the warehouse, and nodes 1 to 5 are the customers. 
+# Full distance matrix: node 0 is the warehouse and nodes 1 to 5 are the customer locations. 
 full_dist_matrix = np.array([
 							[0, 4, 8, 2, 9, 1],
 							[4, 0, 6, 1, 8, 5],

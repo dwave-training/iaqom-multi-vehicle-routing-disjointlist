@@ -4,17 +4,17 @@
   
 # Multi-Vehicle Routing Problem with Stride<sup>TM</sup> Hybrid Solver using Disjoint Lists Variable
 
-For the multi-vehicle routing problem, convert the mathematical formulation into a model in Python. Use disjoint lists as the decision variable so the problem is compatible for submission to the Stride hybrid solver.
+For the multi-vehicle routing problem (MVRP), convert the mathematical formulation into a model in Python. Use disjoint lists to represent the decision variable and code the problem so it is compatible for submission to the Stride hybrid solver.
 
-The objective is to minimize the total distance traveled by all vehicles. The decision variable is which customer location(s) each vehicle should visit, and the order in which each vehicle should visit assigned customer location(s). There are two constraints: each customer (delivery) location must be visited exactly once by a single vehicle, and a vehicle cannot exceed its weight capacity.
+The objective is to minimize the total distance traveled by all vehicles. The decision variables are which customer location(s) each vehicle should visit and the order in which each vehicle should visit assigned customer location(s). There are two constraints: each customer (delivery) location must be visited exactly once by a single vehicle, and a vehicle cannot exceed its weight capacity.
 
 Build the nonlinear model then define the objective function and add the constraints.
 
-This repository does not contain any `#TODO` sections that need to be completed in the Python files. The provided code is intended to help you answer the quiz questions available in Brightspace (LMS).
+This repository does not contain any `#TODO` sections that need to be completed in the Python files. The provided code is intended to help you answer the quiz questions available in the online course.
 
 ## Quiz 1
 
-In the first quiz, we created the model object and defined the constant matrices.
+In the first quiz, create the model object and define the constant matrices.
 
 Open the code file `mvrp_distance_matrices.py`.
 
@@ -23,21 +23,21 @@ Open the code file `mvrp_distance_matrices.py`.
    2. Create a nonlinear model object called `model`.
 
    3. Define the constant matrices:
-      - `full_dist_matrix`, where node `0` is the warehouse and nodes `1` to `5` are the customers locations.
+      - `full_dist_matrix`, where node `0` is the warehouse and nodes `1` to `5` are the customer locations.
       - `c_dist`, submatrix distance.
       - `w_dist`, submatrix distance.
 
 ## Quiz 2
 
-In the second quiz, we defined additional constants.
+In the second quiz, define additional constants.
 
 Start with the work completed in quiz 1. Create the model object, define the constant matrices, and then add additional constants.
 
 Open the code file `mvrp_constants_decision.py`.
 
-   1. Copy all the work submitted in the code file `mvrp_distance_matrices.py`.
+   1. Copy all the work completed in the code file `mvrp_distance_matrices.py`.
    
-   2. Define following constants:
+   2. Define the following constants:
       - `customer_demand`, the demand of each customer location.
       - `num_customers`, the total number of customers.
       - `num_vehicles`, the total number of vehicles.
@@ -45,15 +45,15 @@ Open the code file `mvrp_constants_decision.py`.
 
 ## Quiz 3
 
-In the third quiz, we added the constants to the model object, created the decison variable, built the objective function, and added the constraints.
+In the third quiz, add the constants to the model object, create the decision variable, build the objective function, and add the constraints.
 
-Start with the work completed in quiz 2. Create the model object, define the constant matrices, add the additional constants, and then add those constants to the model object. Next, create the disjoint lists as the decision variable. Finally, build the objective function and add the constraints.
+Start with the work completed in quiz 2. Create the model object, define the constant matrices, add the additional constants, and then add those constants to the model object. Next, create the disjoint lists to represent the decision variable. Finally, build the objective function and add the constraints.
 
 Formulate the problem so that it is compatible for submission to the Stride Hybrid solver, but do not yet submit it to the solver.
 
 Open the code file `mvrp_objective_constraints.py`.
 
-   1. Copy all the work you submitted in the code file `mvrp_constants_decision.py`.
+   1. Copy all the work completed in the code file `mvrp_constants_decision.py`.
     
    2. Add the constants to the model object.
 
