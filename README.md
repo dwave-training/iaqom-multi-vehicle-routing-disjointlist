@@ -47,7 +47,7 @@ Open `mvrp_constants_decision.py`.
 
 In the third quiz, add the constants to the model object, create the decision variable, build the objective function, and add the constraints.
 
-Start with the work completed in quiz 2. Create the model object, define the constant matrices, add the additional constants, and then add those constants to the model object. Next, create the disjoint lists to represent the decision variable. Finally, build the objective function and add the constraints.
+Start with the work completed in quiz 2. Create the model object, define the constant matrices, add the constants (from quiz 2), and then add those constants to the model object. Next, create the disjoint lists to represent the decision variable. Finally, build the objective function and add the constraints.
 
 Formulate the problem so that it is compatible for submission to the Stride Hybrid solver, but do not yet submit it to the solver.
 
