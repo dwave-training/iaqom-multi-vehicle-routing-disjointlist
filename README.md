@@ -6,23 +6,23 @@
 
 For the multi-vehicle routing problem (MVRP), convert the mathematical formulation into a model in Python. Use disjoint lists to represent the decision variable and code the problem so it is compatible for submission to the Stride hybrid solver.
 
-The objective is to minimize the total distance traveled by all vehicles. The decision variables are which customer location(s) each vehicle should visit and the order in which each vehicle should visit assigned customer location(s). There are two constraints: each customer (delivery) location must be visited exactly once by a single vehicle, and a vehicle cannot exceed its weight capacity.
+The objective is to minimize the total distance traveled by all vehicles. The decision variables represent the customer location(s) that each vehicle should visit and the order in which each vehicle should visit the assigned customer location(s). There are two constraints: each customer (delivery) location must be visited exactly once by a single vehicle, and a vehicle cannot exceed its weight capacity.
 
-Build the nonlinear model then define the objective function and add the constraints.
+Build the nonlinear model, define the objective function, and add the constraints.
 
-This repository does not contain any `#TODO` sections that need to be completed in the Python files. The provided code is intended to help you answer the quiz questions available in the online course.
+The code in the repo is intended to help you answer the quiz questions in the online course and, thus, does not contain any `#TODO` sections.
 
 ## Quiz 1
 
 In the first quiz, create the model object and define the constant matrices.
 
-Open the code file `mvrp_distance_matrices.py`.
+Open `mvrp_distance_matrices.py`.
 
    1. Import the relevant packages.
    
    2. Create a nonlinear model object called `model`.
 
-   3. Define the constant matrices:
+   3. Define the following constants matrices:
       - `full_dist_matrix`, where node `0` is the warehouse and nodes `1` to `5` are the customer locations.
       - `c_dist`, submatrix distance.
       - `w_dist`, submatrix distance.
@@ -31,9 +31,9 @@ Open the code file `mvrp_distance_matrices.py`.
 
 In the second quiz, define additional constants.
 
-Start with the work completed in quiz 1. Create the model object, define the constant matrices, and then add additional constants.
+Start with the work completed in quiz 1. Create the model object, define the constants matrices, and then add additional constants.
 
-Open the code file `mvrp_constants_decision.py`.
+Open `mvrp_constants_decision.py`.
 
    1. Copy all the work completed in the code file `mvrp_distance_matrices.py`.
    
