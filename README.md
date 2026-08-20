@@ -6,11 +6,11 @@
 
 For the multi-vehicle routing problem (MVRP), convert the mathematical formulation into a model in Python. Use disjoint lists to represent the decision variable and code the problem so it is compatible for submission to the Stride hybrid solver.
 
-The objective is to minimize the total distance traveled by all vehicles. The decision variables represent the customer location(s) that each vehicle should visit and the order in which each vehicle should visit the assigned customer location(s). There are two constraints: each customer (delivery) location must be visited exactly once by a single vehicle, and a vehicle cannot exceed its weight capacity.
+The objective is to minimize the total distance traveled by all vehicles. The decision variables represent the customer location(s) that each vehicle must visit and the order in which to visit them. There are two constraints: each customer (delivery) location must be visited exactly once by a single vehicle, and a vehicle cannot exceed its weight capacity.
 
 Build the nonlinear model, define the objective function, and add the constraints.
 
-The code in the repo is intended to help you answer the quiz questions in the online course and, thus, does not contain any `#TODO` sections.
+The code in the repo is intended to help you answer the quiz questions in the online course and, thus, does not contain any `TODO` sections.
 
 ## Quiz 1
 
@@ -49,7 +49,7 @@ In the third quiz, add the constants to the model object, create the decision va
 
 Start with the work completed in quiz 2. Create the model object, define the constant matrices, add the constants (from quiz 2), and then add those constants to the model object. Next, create the disjoint lists to represent the decision variable. Finally, build the objective function and add the constraints.
 
-Formulate the problem so that it is compatible for submission to the Stride Hybrid solver, but do not yet submit it to the solver.
+Formulate the problem so that it is compatible for submission to the Stride Hybrid solver, but do not submit it to the solver yet.
 
 Open the code file `mvrp_objective_constraints.py`.
 
@@ -62,8 +62,3 @@ Open the code file `mvrp_objective_constraints.py`.
    4. Build the objective function:
       - Add the constraint that each vehicle cannot exceed its weight capacity.
       - Set the objective function to minimize the total distance traveled by all vehicles.
-   
-
-
-
-
