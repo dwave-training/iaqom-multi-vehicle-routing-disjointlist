@@ -2,7 +2,7 @@
   https://img.shields.io/badge/Open%20in%20GitHub%20Codespaces-333?logo=github)](
   https://codespaces.new/dwave-training/iaqom-multi-vehicle-routing-disjointlist?quickstart=1)
   
-# Multi-Vehicle Routing Problem With The Stride<sup>TM</sup> Hybrid Solver Using The Disjoint Lists Variable
+# Multi-Vehicle Routing Problem With the Stride<sup>TM</sup> Hybrid Solver Using the Disjoint Lists Variable
 
 For the multi-vehicle routing problem (MVRP), convert the mathematical formulation into a model in Python. Use disjoint lists to represent the decision variable and code the problem so it is compatible for submission to the Stride hybrid solver.
 
