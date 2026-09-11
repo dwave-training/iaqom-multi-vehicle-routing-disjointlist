@@ -12,9 +12,9 @@ Build the nonlinear model, define the objective function, and add the constraint
 
 The code in the repo is intended to help you answer the quiz questions in the online course and, thus, does not contain any `TODO` sections.
 
-## Quiz 1
+## Quiz: MVRP Distance Matrices
 
-In the first quiz, create the model object and define the constant matrices.
+In the quiz MVRP Distance Matrices, create the model object and define the constant matrices.
 
 Open `mvrp_distance_matrices.py`.
 
@@ -27,11 +27,11 @@ Open `mvrp_distance_matrices.py`.
       - `c_dist`, submatrix distance.
       - `w_dist`, submatrix distance.
 
-## Quiz 2
+## Quiz: MVRP Constants and Decision Variable
 
-In the second quiz, define additional constants.
+In the quiz MVRP Constants and Decision Variable, define additional constants.
 
-Start with the work completed in quiz 1. Create the model object, define the constants matrices, and then add additional constants.
+Start with the work completed in the MVRP Distance Matrices quiz. Create the model object, define the constants matrices, and then add additional constants.
 
 Open `mvrp_constants_decision.py`.
 
@@ -43,11 +43,11 @@ Open `mvrp_constants_decision.py`.
       - `num_vehicles`, the total number of vehicles.
       - `vehicle_capacity`, the weight capacity of each vehicle.
 
-## Quiz 3
+## Quiz: MVRP Objective and Constraints
 
-In the third quiz, add the constants to the model object, create the decision variable, build the objective function, and add the constraints.
+In the quiz MVRP Objective and Constraints, add the constants to the model object, create the decision variable, build the objective function, and add the constraints.
 
-Start with the work completed in quiz 2. Create the model object, define the constant matrices, add the constants (from quiz 2), and then add those constants to the model object. Next, create the disjoint lists to represent the decision variable. Finally, build the objective function and add the constraints.
+Start with the work completed in the quiz MVRP Constants and Decision Variable. Create the model object, define the constant matrices, add the constants (from quiz 2), and then add those constants to the model object. Next, create the disjoint lists to represent the decision variable. Finally, build the objective function and add the constraints.
 
 Formulate the problem so that it is compatible for submission to the Stride Hybrid solver, but do not submit it to the solver yet.
 
