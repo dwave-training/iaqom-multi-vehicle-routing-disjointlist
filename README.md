@@ -14,30 +14,25 @@ The code in the repo is intended to help you answer the quiz questions in the on
 
 ## Quiz: MVRP Distance Matrices
 
-In the quiz MVRP Distance Matrices, create the model object and define the constant matrices.
+Explore code for the MVRP that creates a model object and defines the distance matrices.
 
-Open `mvrp_distance_matrices.py`.
+Open and review `mvrp_distance_matrices.py` to answer the questions in the course quiz. This code:
 
-   1. Import the relevant packages.
+   1. Imports the relevant packages.
    
-   2. Create a nonlinear model object called `model`.
+   2. Creates a nonlinear model object called `model`.
 
-   3. Define the following constants matrices:
+   3. Defines the following constants matrices:
       - `full_dist_matrix`, where node `0` is the warehouse and nodes `1` to `5` are the customer locations.
       - `c_dist`, submatrix distance.
       - `w_dist`, submatrix distance.
 
 ## Quiz: MVRP Constants and Decision Variable
 
-In the quiz MVRP Constants and Decision Variable, define additional constants.
+Continue working with MVRP code by examining more problem constants and defining the decision variable symbol.
 
-Start with the work completed in the MVRP Distance Matrices quiz. Create the model object, define the constants matrices, and then add additional constants.
+Open and review `mvrp_constants_decision.py` to answer the questions in the course quiz. This code defines the following constants:
 
-Open `mvrp_constants_decision.py`.
-
-   1. Copy all the work completed in the code file `mvrp_distance_matrices.py`.
-   
-   2. Define the following constants:
       - `customer_demand`, the demand of each customer location.
       - `num_customers`, the total number of customers.
       - `num_vehicles`, the total number of vehicles.
@@ -45,20 +40,6 @@ Open `mvrp_constants_decision.py`.
 
 ## Quiz: MVRP Objective and Constraints
 
-In the quiz MVRP Objective and Constraints, add the constants to the model object, create the decision variable, build the objective function, and add the constraints.
+Continue coding the MVRP by examining the objective function and constraints.
 
-Start with the work completed in the quiz MVRP Constants and Decision Variable. Create the model object, define the constant matrices, add the constants (from quiz 2), and then add those constants to the model object. Next, create the disjoint lists to represent the decision variable. Finally, build the objective function and add the constraints.
-
-Formulate the problem so that it is compatible for submission to the Stride Hybrid solver, but do not submit it to the solver yet.
-
-Open the code file `mvrp_objective_constraints.py`.
-
-   1. Copy all the work completed in the code file `mvrp_constants_decision.py`.
-    
-   2. Add the constants to the model object.
-
-   3. Create the disjoint lists as the decison variable.
-
-   4. Build the objective function:
-      - Add the constraint that each vehicle cannot exceed its weight capacity.
-      - Set the objective function to minimize the total distance traveled by all vehicles.
+Open and review `mvrp_objective_constraints.py` to answer the questions in the course quiz.
